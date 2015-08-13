@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CIS Physics HL - Chapter 4</title>
+
+        <meta name="author" content="Calvin Yeung">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" href="../../css/skeleton.css">
+        <link rel="stylesheet" href="../../css/custom.css">
+        <link rel="icon" type="image/png" href="../../images/favicon.png">
+        <link rel="stylesheet" href="../../css/github-prettify-theme.css">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+        <script src="../../js/site.js"></script>
+
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar-spacer"></div>
+            <nav class="navbar">
+                <div class="container">
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="../../index.html">Home</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="#" data-popover="#codeNavPopover">Homework Solutions</a>
+                            <div id="codeNavPopover" class="popover">
+                                <ul class="popover-list">
+                                    <li class="popover-item">
+                                        <a class="popover-link" href="../../block1.html">Block 1</a>
+                                    </li>
+                                    <li class="popover-item">
+                                        <a class="popover-link" href="../../block2.html">Block 2</a>
+                                    </li>
+                                    <li class="popover-item">
+                                        <a class="popover-link" href="../../block3.html">Block 3</a>
+                                    </li>
+                                    <li class="popover-item">
+                                        <a class="popover-link" href="../../block4.html">Block 4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="docs-section">
+                <h6 class="docs-header">Problem 4.35</h6>
+                <p>You have just landed on Planet X. You take out a 100-g ball, release it from rest from a height of 10.0 m, and
+                    measure that it takes 2.2 s to reach the ground. You can ignore any force on the ball from the atmosphere of
+                    the planet. How much does the 100-g ball weigh on the surface of Planet X?</p>
+            </div>
+
+            <div class="docs-section">
+                <h6 class="docs-header">Solution</h6>
+
+                <p>Steps to solving the problem:</p>
+
+                <ol>
+                    <li class="list">Find acceleration caused by Planet X's gravity</li>
+                    <li class="list">Find weight</li>
+                </ol>
+
+                <br>
+                <p>We know that the ball had an initial velocity of 0 $\hbox{ms}^{-1}$, and it took 2.2 s for it to travel
+                    10.0 m with constant acceleration. To find the acceleration, we can use the following equation:</p>
+
+                $$s=ut+\frac{1}{2}at^2$$
+
+                <p>Plugging in our known values, we get:</p>
+
+                $$10=(0)t+\frac{1}{2}a(2.2)^2$$
+                $$10=2.42a$$
+                $$a=4.13\ \hbox{ms}^{-2}$$
+
+                <br>
+                <p>To find the weight of the ball on Planet X, we can use the equation $F_W=mg$, where $F_W$ is in Newtons,
+                    $m$ is in kilograms, and $g$ is in meters per second squared. Hence, substituting in the values, we get:</p>
+
+                \begin{split}
+                    F_{W, \hbox{ball}} & = mg\\
+                    & = (0.1)(4.13)\\
+                    & = 0.413\ \hbox{N}
+                \end{split}
+
+            </div>
+        </div>
+    </body>
+</html>
