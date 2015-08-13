@@ -55,7 +55,7 @@
   white-space: pre;
   word-wrap: break-word }
 .example {
-  position: relative; 
+  position: relative;
   margin-top: 4rem; }
 .example-header {
   font-weight: 600;
@@ -153,7 +153,7 @@
     display: block; }
   /* Re-overiding the width 100% declaration to match size of % based container */
   .has-docked-nav .navbar > .container {
-    width: 80%; }
+    width: 100%; }
 
   /* Popover */
   .popover.open {
@@ -168,11 +168,11 @@
     border: 1px solid #eee;
     border-radius: 4px;
     top: 92%;
-    left: -50%;
+    left: 0%;
     -webkit-filter: drop-shadow(0 0 6px rgba(0,0,0,.1));
        -moz-filter: drop-shadow(0 0 6px rgba(0,0,0,.1));
             filter: drop-shadow(0 0 6px rgba(0,0,0,.1)); }
-  .popover-item:first-child .popover-link:after, 
+  .popover-item:first-child .popover-link:after,
   .popover-item:first-child .popover-link:before {
     bottom: 100%;
     left: 50%;
