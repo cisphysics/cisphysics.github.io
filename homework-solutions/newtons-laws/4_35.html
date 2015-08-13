@@ -8,11 +8,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="../css/normalize.css">
-        <link rel="stylesheet" href="../css/skeleton.css">
-        <link rel="stylesheet" href="../css/custom.css">
-        <link rel="icon" type="image/png" href="../images/favicon.png">
-        <link rel="stylesheet" href="../css/github-prettify-theme.css">
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" href="../../css/skeleton.css">
+        <link rel="stylesheet" href="../../css/custom.css">
+        <link rel="icon" type="image/png" href="../../images/favicon.png">
+        <link rel="stylesheet" href="../../css/github-prettify-theme.css">
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
@@ -56,33 +56,48 @@
                 </div>
             </nav>
 
-            <div class="docs-section" id="welcome">
-                <h6 class="docs-header">Problem 4.33</h6>
-                <p>A 4.80-kg bucket of water is accelerated up by a cord of negligible mass whose breaking strength is 75.0 N.
-                    If the bucket starts from rest, what is the minimum time required to raise the bucket a vertical distance of
-                    12.0 m without breaking the cord?</p>
-                <a href="newtons-laws/4_33.html" class="button-link">See Solution</a>
-            </div>
-
-            <div class="docs-section" id="links">
+            <div class="docs-section">
                 <h6 class="docs-header">Problem 4.35</h6>
                 <p>Two horses pull horizontally on ropes attached to a stump. The two forces $\vec{F_1}$ and $\vec{F_2}$ that
                     they apply to the stump are such that the net (resultant) force $\vec{R}$ equal to the magnitude of $\vec{F_1}$
                     and makes an angle of 90$^{\circ}$ with $\vec{F_1}$. Let $|\vec{F_1}|=1300$ N and $|\vec{R}|=1300$ N also. Find
                     the magnitude of $\vec{F_2}$ and its direction (relative to $\vec{F_1}$).</p>
-                <a href="newtons-laws/4_35.html" class="button-link">See Solution</a>
             </div>
 
-            <div class="docs-section" id="links">
-                <h6 class="docs-header">Problem 4.36</h6>
-                <p>You have just landed on Planet X. You take out a 100-g ball, release it from rest from a height of 10.0 m, and
-                    measure that it takes 2.2 s to reach the ground. You can ignore any force on the ball from the atmosphere of
-                    the planet. How much does the 100-g ball weigh on the surface of Planet X?</p>
-                <a href="newtons-laws/4_36.html" class="button-link">See Solution</a>
-            </div>
+            <div class="docs-section">
+                <h6 class="docs-header">Solution</h6>
 
-            <div class="docs-section" id="links">
-                <h6 class="docs-header">Problem 4.37</h6>
+                <p>Given the description of the problem, we know that $\vec{R}$ is the resultant force of $\vec{F_1}$ and
+                    $\vec{F_2}$. Writing this out mathematically, we get:</p>
+
+                $$\vec{F_1}+\vec{F_2}=\vec{R}$$
+
+                <p>In this case, $\vec{F_2}$ is the unknown. We know that both $\vec{F_1}$ and $\vec{R}$ have a magnitude of
+                    $1300\ N$ and are perpendicular to each other. Because they are perpendicular, we can assume $\vec{F_1}$ points
+                    1300 to the right and $\vec{R}$ points 1300 upwards. We can then set $\vec{F_2}$ as the subject of the equation
+                    and write $\vec{F_1}$ and $\vec{R}$ in vector notation to get the following:</p>
+
+                \begin{split}
+                \vec{F_2} & = \vec{R}-\vec{F_1}\\
+                    & = (0\hat{i}+1300\hat{j})-(1300\hat{i}+0\hat{j})\\
+                    & = -1300\hat{i}+1300\hat{j}
+                \end{split}
+
+                <br>
+                <p>We can then find the magnitude of $\vec{F_2}$ using the vector magnitude formula:</p>
+
+                $$|\vec{u}|=\sqrt{u_x^2+u_y^2}$$<br>
+
+                \begin{split}
+                    |\vec{F_2}| & = \sqrt{(-1300)^2+(1300)^2}\\
+                    & = 1300\sqrt{2}\ \mbox{N}
+                \end{split}
+
+                <br>
+                <p>Because the vector components are of equal magnitude, we also know the components form a 45-45-90 triangle.
+                    By visualizing the vectors, we know that $\vec{F_2}$ and $\vec{F_1}$ form a 135$^{\circ}$ angle.</p>
+
+                <img src="../../images/vec1.png" width=70% height=70% class="center">
             </div>
         </div>
     </body>

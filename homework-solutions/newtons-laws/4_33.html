@@ -8,11 +8,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="../css/normalize.css">
-        <link rel="stylesheet" href="../css/skeleton.css">
-        <link rel="stylesheet" href="../css/custom.css">
-        <link rel="icon" type="image/png" href="../images/favicon.png">
-        <link rel="stylesheet" href="../css/github-prettify-theme.css">
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" href="../../css/skeleton.css">
+        <link rel="stylesheet" href="../../css/custom.css">
+        <link rel="icon" type="image/png" href="../../images/favicon.png">
+        <link rel="stylesheet" href="../../css/github-prettify-theme.css">
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
@@ -56,33 +56,62 @@
                 </div>
             </nav>
 
-            <div class="docs-section" id="welcome">
+            <div class="docs-section">
                 <h6 class="docs-header">Problem 4.33</h6>
                 <p>A 4.80-kg bucket of water is accelerated up by a cord of negligible mass whose breaking strength is 75.0 N.
                     If the bucket starts from rest, what is the minimum time required to raise the bucket a vertical distance of
                     12.0 m without breaking the cord?</p>
-                <a href="newtons-laws/4_33.html" class="button-link">See Solution</a>
             </div>
 
-            <div class="docs-section" id="links">
-                <h6 class="docs-header">Problem 4.35</h6>
-                <p>Two horses pull horizontally on ropes attached to a stump. The two forces $\vec{F_1}$ and $\vec{F_2}$ that
-                    they apply to the stump are such that the net (resultant) force $\vec{R}$ equal to the magnitude of $\vec{F_1}$
-                    and makes an angle of 90$^{\circ}$ with $\vec{F_1}$. Let $|\vec{F_1}|=1300$ N and $|\vec{R}|=1300$ N also. Find
-                    the magnitude of $\vec{F_2}$ and its direction (relative to $\vec{F_1}$).</p>
-                <a href="newtons-laws/4_35.html" class="button-link">See Solution</a>
-            </div>
+            <div class="docs-section">
+                <h6 class="docs-header">Solution</h6>
 
-            <div class="docs-section" id="links">
-                <h6 class="docs-header">Problem 4.36</h6>
-                <p>You have just landed on Planet X. You take out a 100-g ball, release it from rest from a height of 10.0 m, and
-                    measure that it takes 2.2 s to reach the ground. You can ignore any force on the ball from the atmosphere of
-                    the planet. How much does the 100-g ball weigh on the surface of Planet X?</p>
-                <a href="newtons-laws/4_36.html" class="button-link">See Solution</a>
-            </div>
+                <p>Steps to solving the problem:</p>
+                <ol>
+                    <li class="list">Find the maximum acceleration such that the cord will not break</li>
+                    <li class="list">Find the time taken given the acceleration</li>
+                </ol>
 
-            <div class="docs-section" id="links">
-                <h6 class="docs-header">Problem 4.37</h6>
+                <br>
+                <p>It is given that the cord can handle a force up to 75.0 N. This means that the tension in the cord, caused by
+                    the water bucket's weight and the upward acceleration, cannot exceed 75.0 N. Hence,</p>
+
+                \begin{split}
+                    F_{W, \mbox{bucket}} & = mg\\
+                    & = (4.8)(9.8)\\
+                    & = 47.04\ \mbox{N}
+                \end{split}
+
+                \begin{split}
+                    F_{\mbox{up}} & = ma_{\mbox{up}}\\
+                    & = 4.8a_{\mbox{up}}\ \mbox{N}
+                \end{split}
+
+                \begin{split}
+                    F_{\mbox{max}} & = W_{\mbox{bucket}}+F_{\mbox{up}}\\
+                    & = 47.04+4.8a_{\mbox{up}}\\
+                    & = 75\ \mbox{N}
+                \end{split}
+
+                <p>Now, solve for $a_{\mbox{up}}$:</p>
+                $$47.04+4.8a_{\mbox{up}}=75$$
+                $$4.8a_{\mbox{up}}=27.96$$
+                $$a_{\mbox{up}}=5.825\ ms^{-2}$$
+
+                <br>
+                <p>This means that the maximum acceleration the cord can withstand is $5.825\ ms^{-2}$. To find the time it will
+                    take for the water bucket to be raised 12.0 m with the given acceleration, simply plug the numbers into the
+                    following equation:</p>
+
+                $$s=ut+\frac{1}{2}at^2$$<br>
+                $$12=0t+\frac{1}{2}(5.825)t^2$$
+                $$12=2.913t^2$$
+                $$4.120=t^2$$
+                $$2.030=t$$
+
+                <br>
+                <p>From this, we know that the minimum time required for the water bucket to travel a vertical distance of 12 m
+                    without the cord breaking is 2.03 seconds.</p>
             </div>
         </div>
     </body>
