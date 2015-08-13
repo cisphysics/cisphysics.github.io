@@ -2,21 +2,29 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>CIS Physics HL - Home</title>
+        <title>CIS Physics HL - Chapter 3</title>
 
         <meta name="author" content="Calvin Yeung">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/skeleton.css">
-        <link rel="stylesheet" href="css/custom.css">
-        <link rel="icon" type="image/png" href="images/favicon.png">
-        <link rel="stylesheet" href="css/github-prettify-theme.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/skeleton.css">
+        <link rel="stylesheet" href="../css/custom.css">
+        <link rel="icon" type="image/png" href="../images/favicon.png">
+        <link rel="stylesheet" href="../css/github-prettify-theme.css">
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
-        <script src="js/site.js"></script>
+        <script src="../js/site.js"></script>
+
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+            });
+        </script>
     </head>
 
     <body>
@@ -26,50 +34,50 @@
                 <div class="container">
                     <ul class="navbar-list">
                         <li class="navbar-item">
-                            <a class="navbar-link" href="./index.html">Home</a>
+                            <a class="navbar-link" href="../index.html">Home</a>
                         </li>
                         <li class="navbar-item">
                             <a class="navbar-link" href="#" data-popover="#codeNavPopover">Homework Solutions</a>
                             <div id="codeNavPopover" class="popover">
                                 <ul class="popover-list">
                                     <li class="popover-item">
-                                        <a class="popover-link" href="./homework-solutions/chapter1.html">Chapter 1</a>
+                                        <a class="popover-link" href="./chapter1.html">Chapter 1</a>
                                     </li>
                                     <li class="popover-item">
-                                        <a class="popover-link" href="./homework-solutions/chapter2.html">Chapter 2</a>
+                                        <a class="popover-link" href="./chapter2.html">Chapter 2</a>
                                     </li>
                                     <li class="popover-item">
-                                        <a class="popover-link" href="./homework-solutions/chapter3.html">Chapter 3</a>
+                                        <a class="popover-link" href="./chapter3.html">Chapter 3</a>
                                     </li>
                                     <li class="popover-item">
-                                        <a class="popover-link" href="./homework-solutions/chapter4.html">Chapter 4</a>
+                                        <a class="popover-link" href="./chapter4.html">Chapter 4</a>
                                     </li>
                                     <li class="popover-item">
-                                        <a class="popover-link" href="./homework-solutions/chapter5.html">Chapter 5</a>
+                                        <a class="popover-link" href="./chapter5.html">Chapter 5</a>
                                     </li>
                                     <li class="popover-item">
-                                        <a class="popover-link" href="./homework-solutions/chapter6.html">Chapter 6</a>
+                                        <a class="popover-link" href="./chapter6.html">Chapter 6</a>
                                     </li>
                                     <li class="popover-item">
-                                        <a class="popover-link" href="./homework-solutions/chapter7.html">Chapter 7</a>
+                                        <a class="popover-link" href="./chapter7.html">Chapter 7</a>
                                     </li>
                                     <li class="popover-item">
-                                        <a class="popover-link" href="./homework-solutions/chapter8.html">Chapter 8</a>
+                                        <a class="popover-link" href="./chapter8.html">Chapter 8</a>
                                     </li>
                                     <li class="popover-item">
-                                        <a class="popover-link" href="./homework-solutions/chapter9.html">Chapter 9</a>
+                                        <a class="popover-link" href="./chapter9.html">Chapter 9</a>
                                     </li>
                                     <li class="popover-item">
-                                        <a class="popover-link" href="./homework-solutions/chapter10.html">Chapter 10</a>
+                                        <a class="popover-link" href="./chapter10.html">Chapter 10</a>
                                     </li>
                                     <li class="popover-item">
-                                        <a class="popover-link" href="./homework-solutions/chapter11.html">Chapter 11</a>
+                                        <a class="popover-link" href="./chapter11.html">Chapter 11</a>
                                     </li>
                                     <li class="popover-item">
-                                        <a class="popover-link" href="./homework-solutions/chapter12.html">Chapter 12</a>
+                                        <a class="popover-link" href="./chapter12.html">Chapter 12</a>
                                     </li>
                                     <li class="popover-item">
-                                        <a class="popover-link" href="./homework-solutions/chapter13.html">Chapter 13</a>
+                                        <a class="popover-link" href="./chapter13.html">Chapter 13</a>
                                     </li>
                                 </ul>
                             </div>
@@ -79,17 +87,9 @@
             </nav>
 
             <div class="docs-section">
-                <h6 class="docs-header">Welcome!</h6>
-                <p>This website contains solutions and explanations to homework problems.</p>
-                <img src="images/physics.png" width=100% height=100%>
+                <h6 class="docs-header">Problem 4.34</h6>
             </div>
 
-            <div class="docs-section">
-                <h6 class="docs-header">Some Useful Links</h6>
-                <ul>
-                    <li><a href="https://dl.dropboxusercontent.com/u/15964266/scienceIntro.html">Mr. Mumm's Science Website</a></li>
-                    <li><a href="https://goo.gl/YAbeNe">Block 1 - Mechanics, Gravitation (PDF)</a></li>
-                </ul>
             </div>
         </div>
     </body>
