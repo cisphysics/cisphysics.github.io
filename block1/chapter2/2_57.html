@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>CIS Physics HL - Chapter 4</title>
+        <title>CIS Physics HL - Chapter 2</title>
 
         <meta name="author" content="Calvin Yeung">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -60,45 +60,43 @@
             </nav>
 
             <div class="docs-section">
-                <h6 class="docs-header">Problem 4.35</h6>
-                <p>You have just landed on Planet X. You take out a 100-g ball, release it from rest from a height of 10.0 m, and
-                    measure that it takes 2.2 s to reach the ground. You can ignore any force on the ball from the atmosphere of
-                    the planet. How much does the 100-g ball weigh on the surface of Planet X?</p>
+                <h6 class="docs-header">Problem 2.57</h6>
+
+                <p>The position of a paritcle between $t$ = 0 and $t$ = 2.00 s is given by $x(t)$ = (3.00 m/s$^3$)$t^3$ -
+                    (10.0 m/s$^2$)$t^2$ + (9.00 m/s)$t$. (a) Draw the $x$-$t$, $v_x$-$t$, and $a_x$-$t$ graphs of this particle.
+                    (b) At what time(s) between $t$ =  0 and $t$ = 2.00 s is the particle instantaneously at rest? Does your
+                    numerical result agree with the $v_x$-$t$ graph in part (a)? (c) At each time calculated in part (b), is
+                    the acceleration of the particle positive or negative? Show that in each case the same answer is deduced from
+                    $a_x(t)$ and from the $v_x$-$t$ graph. (d) At what time(s) between $t$ = 0 and $t$ = 2.00 s is the velocity of
+                    the particle instantaneously not changing? Locate this point on the $v_x$-$t$ and $a_x$-$t$ graphs of part (a).
+                    (e) What is the particl's greatest distance fromt he origin ($x$ = 0) between $t$ = 0 and $t$ = 2.00 s? (f) At
+                    what time(s) between $t$ = 0 and $t$ = 2.00 s is the particle <i>speeding up</i> at the greatest rate? At what
+                    time(s) between $t$ = 0 and $t$ = 2.00 s is the particle slowing down at the greatest rate? Locate these points
+                    on the $v_x$-$t$ and $a_x$-$t$ graphs of part (a).</p>
+
             </div>
 
             <div class="docs-section">
                 <h6 class="docs-header">Solution</h6>
 
-                <p>Steps to solving the problem:</p>
+                <p>Part (a) is simply drawing $x$-$t$, $v_x$-$t$, and $a_x$-$t$ graphs. To do this, we have to find the specified
+                    graphs through differentiation. Recall:</p>
 
-                <ol>
-                    <li class="list">Find acceleration caused by Planet X's gravity</li>
-                    <li class="list">Find weight</li>
-                </ol>
-
-                <br>
-                <p>We know that the ball had an initial velocity of 0 ms$^{-1}$, and it took 2.2 s for it to travel
-                    10.0 m with constant acceleration. To find the acceleration, we can use the following equation:</p>
-
-                $$s=ut+\frac{1}{2}at^2$$
-
-                <p>Plugging in our known values, we get:</p>
-
-                \begin{split}
-                    (0)t+\frac{1}{2}a(2.2)^2 & = 10\\
-                    2.42a & = 10\\
-                    a & = 4.13\ \hbox{ms}^{-2}
-                \end{split}
+                $$v_x(t)=\frac{\hbox{d}}{\hbox{d}t}x(t)$$
+                $$a_x(t)=\frac{\hbox{d}^2}{\hbox{d}t^2}x(t)$$
 
                 <br>
-                <p>To find the weight of the ball on Planet X, we can use the equation $F_W=mg$, where $F_W$ is in Newtons,
-                    $m$ is in kilograms, and $g$ is in meters per second squared. Hence, substituting in the values, we get:</p>
+                <p>We are given $x(t)$, so finding $v_x(t)$ and $a_x(t)$ is easy:</p>
 
                 \begin{split}
-                    F_{W, \hbox{ball}} & = mg\\
-                    & = (0.1)(4.13)\\
-                    & = 0.413\ \hbox{N}
+                    x(t) & = 3t^3-10t^2+9t\\\\
+                    v_x(t) & = \frac{\hbox{d}}{\hbox{d}t}x(t)\\
+                    & = 9t^2-20t+9\\\\
+                    a_x(t) & = \frac{\hbox{d}^2}{\hbox{d}t^2}x(t)\\
+                    & = 18t-20
                 \end{split}
+
+
 
             </div>
         </div>
