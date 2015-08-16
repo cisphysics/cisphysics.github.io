@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CIS Physics HL - Important Equations</title>
+
+        <meta name="author" content="Calvin Yeung">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/skeleton.css">
+        <link rel="stylesheet" href="../css/custom.css">
+        <link rel="icon" type="image/png" href="../images/favicon.png">
+        <link rel="stylesheet" href="../css/github-prettify-theme.css">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+        <script src="../js/site.js"></script>
+
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar-spacer"></div>
+            <nav class="navbar">
+                <div class="container">
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="#" data-popover="#codeNavPopover">Homework Solutions</a>
+                            <div id="codeNavPopover" class="popover">
+                                <ul class="popover-list">
+                                    <li class="popover-item">
+                                        <a class="popover-link" href="../block1.html">Block 1</a>
+                                    </li>
+                                    <li class="popover-item">
+                                        <a class="popover-link" href="../block2.html">Block 2</a>
+                                    </li>
+                                    <li class="popover-item">
+                                        <a class="popover-link" href="../block3.html">Block 3</a>
+                                    </li>
+                                    <li class="popover-item">
+                                        <a class="popover-link" href="../block4.html">Block 4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="docs-section">
+                <h6 class="docs-header">Vector Operations</h6>
+                <b>Vector Magnitude</b>
+
+                \begin{split}
+                    |\vec{u}| &= \sqrt{u_x^2+u_y^2}\\
+                    &= \sqrt{\textstyle\sum^{N}_{i=1}u_i^2}
+                \end{split}
+
+                <br>
+                <p>To find the magnitude, sum the squares of the components then take the square root. Basically Pythagorean Theorem.</p>
+
+                <br>
+                <b>Vector Addition</b>
+
+                \begin{split}
+                    \vec{u}+\vec{v} &= (u_x+v_x)\hat{i}+(u_y+v_y)\hat{j}\\
+                    &= \textstyle\sum^{N}_{i=1}(u_i+v_i)\hat{e_i}
+                \end{split}
+
+                <br>
+                <p>The components of the resultant vector are the sum of the corresponding components of its constituents.
+                    The second equation looks scary, but its just the general form for summing any two N-dimensional vectors.</p>
+
+                <br>
+                <b>Scalar Product / Dot Product</b>
+
+                \begin{split}
+                    \vec{u}\cdot\vec{v} &= u_xv_x+u_yv_y\\
+                    &= |\vec{u}||\vec{v}|\hbox{cos}(\theta)\\
+                    &= \textstyle\sum^{N}_{i=1}u_iv_i
+                \end{split}
+
+                <br>
+                <p>The scalar or dot product simply means how much of $\vec{u}$ is pointing in the $\vec{v}$ direction times the
+                    magnitude of $\vec{u}$ or vice versa. It comes in two forms. The first form is the sum of the product of the
+                    components and the second is the product of the magnitudes multiplied by the cosine of the angle formed between
+                    the two vectors.</p>
+
+                <br>
+                <b>Vector Product / Cross Product</b>
+
+                \begin{split}
+                    \vec{u}\times\vec{v} &= (u_yv_z-u_zv_y)\hat{i}+(u_xv_z-u_zv_x)\hat{j}+(u_xv_y-u_yv_x)\hat{k}\\
+                    &= \begin{vmatrix}
+                        \hat{i} & \hat{j} & \hat{k}\\
+                        u_x & u_y & u_z\\
+                        v_x & v_y & v_z
+                    \end{vmatrix}\\\\
+                    |\vec{u}\times\vec{v}| &= |\vec{u}||\vec{v}|\hbox{sin}(\theta)\\\\
+                    A\times B &= -B\times A
+                \end{split}
+
+                <br>
+                <p>I can't give this example in two dimensions since cross products can only exist in three or seven dimensions
+                    (<a href="http://goo.gl/yQ7PmV">more info</a>). A vector made by crossing two vectors points in the direction
+                    perpendicular to the plane created by the two vectors. It is a noncommutative operator; $A\times B\neq B\times
+                    A$.</p>
+                <br>
+
+            </div>
+
+            <div class="docs-section">
+                <h6 class="docs-header">Kinematics</h6>
+                <b>Displacement, Velocity, and Acceleration Relations</b>
+
+                \begin{split}
+                    v(t) &= \frac{\hbox{d}}{\hbox{d}t}\ x(t)\\
+                    a(t) &= \frac{\hbox{d}^2}{\hbox{d}t^2}\ x(t)
+                \end{split}
+
+                <br>
+                <p>Velocity is the rate of change of displacement over time, and acceleration is the rate of change of velocity
+                    over time (or the rate of change of the rate of change of displacement over time over time).</p>
+                <br>
+
+                <b>Simple Equations of Motion</b>
+
+                $$v=v_0+at$$
+                $$x=x_0+v_0t+\frac{1}{2}at^2$$
+                $$x=\frac{1}{2}(v_0+v)t$$
+                $$2ax=v^2-v_0^2$$
+
+                <br>
+                <p>These equations only work if acceleration is constant.</p>
+                <br>
+            </div>
+
+        </div>
+    </body>
+</html>
