@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CIS Physics HL - Chapter 1</title>
+
+        <meta name="author" content="Calvin Yeung">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" href="../../css/skeleton.css">
+        <link rel="stylesheet" href="../../css/custom.css">
+        <link rel="icon" type="image/png" href="../../images/favicon.png">
+        <link rel="stylesheet" href="../../css/github-prettify-theme.css">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+        <script src="../../js/site.js"></script>
+
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar-spacer"></div>
+            <nav class="navbar">
+                <div class="container">
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="../../index.html">Home</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="#" data-popover="#codeNavPopover">Homework Solutions</a>
+                            <div id="codeNavPopover" class="popover">
+                                <ul class="popover-list">
+                                    <li class="popover-item">
+                                        <a class="popover-link" href="../../block1.html">Block 1</a>
+                                    </li>
+                                    <li class="popover-item">
+                                        <a class="popover-link" href="../../block2.html">Block 2</a>
+                                    </li>
+                                    <li class="popover-item">
+                                        <a class="popover-link" href="../../block3.html">Block 3</a>
+                                    </li>
+                                    <li class="popover-item">
+                                        <a class="popover-link" href="../../block4.html">Block 4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="docs-section">
+                <h6 class="docs-header">Problem 1.55</h6>
+
+                <p>In January 2006 astronomers reported the discovery of a planet comparable in size to the earth orbiting another
+                    star and having a mass of about 5.5 times the earth's mass. It is believed to consist of a mixture of rock and
+                    ice, similar to Neptune. If this planet has the same density as Neptune (1.76 g/cm$^3$), what is its radius
+                    expressed (a) in kilometers and (b) as a multiple of earth's radius?</p>
+
+            </div>
+
+            <div class="docs-section">
+                <h6 class="docs-header">Solution</h6>
+
+                <p>The earth's mass is 6 $\times$ 10$^{24}$ kg. Therefore, the mass of the planet should be 5.5 times that, which is around 3.3 $\times$ 10$^{25}$ kg. Our goal is to find the radius of the planet. To find the radius when given the mass and density, we have to find the volume, which is mass divided by density. First, we have to make sure the density is in the correct units in kilograms per meter cubed:</p>
+
+                \begin{split}
+                    1\hbox{ g}&=0.001\hbox{ kg}\\
+                    1\hbox{ cm}&=0.01\hbox{ m}\\
+                    \rho &= 1.76\ \frac{\hbox{g}}{\hbox{cm}^3}\\
+                    &= 1.76\ \frac{(0.001\hbox{ kg})}{(0.01\hbox{ cm})^3}\\
+                    &= 1760\ \frac{\hbox{kg}}{\hbox{m}^3}
+                \end{split}
+
+                <p>Dividing the mass by density (in the correct units!), we get the volume:</p>
+                $$\frac{3.3\times 10^{25}}{1760}=1.875\times 10^{22}\hbox{ m}^3$$
+
+                <p>We can assume the planet is a sphere, so we can use the sphere formula ($V=\frac{4}{3}\pi r^3$) to find the radius:</p>
+
+                \begin{split}
+                    \frac{4}{3}\pi r^3&=1.875\times 10^{22}\\
+                    r&=\sqrt[3]{\frac{3}{4\pi}1.875\times 10^{22}}\\
+                    &=1.626\times 10^7\hbox{ m}\\
+                    &=1.626\times 10^4\hbox{ km}
+                \end{split}
+
+                <br>
+                <p>The earth's radius is 6371 km, so the planet is $\frac{16260}{6371}=2.6$ times the earth's radius.</p>
+            </div>
+        </div>
+    </body>
+</html>
