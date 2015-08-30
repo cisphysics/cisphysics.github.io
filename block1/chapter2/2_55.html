@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CIS Physics HL - Chapter 2</title>
+
+        <meta name="author" content="Calvin Yeung">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" href="../../css/skeleton.css">
+        <link rel="stylesheet" href="../../css/custom.css">
+        <link rel="icon" type="image/png" href="../../images/favicon.png">
+        <link rel="stylesheet" href="../../css/github-prettify-theme.css">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+        <script src="../../js/site.js"></script>
+
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar-spacer"></div>
+            <nav class="navbar">
+                <div class="container">
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="../../index.html">Home</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="#" data-popover="#codeNavPopover">Homework Solutions</a>
+                            <div id="codeNavPopover" class="popover">
+                                <ul class="popover-list">
+                                    <li class="popover-item">
+                                        <a class="popover-link" href="../../block1.html">Block 1</a>
+                                    </li>
+                                    <li class="popover-item">
+                                        <a class="popover-link" href="../../block2.html">Block 2</a>
+                                    </li>
+                                    <li class="popover-item">
+                                        <a class="popover-link" href="../../block3.html">Block 3</a>
+                                    </li>
+                                    <li class="popover-item">
+                                        <a class="popover-link" href="../../block4.html">Block 4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="docs-section">
+                <h6 class="docs-header">Problem 2.55</h6>
+
+                <p>A typical male sprinter can maintain his maximum acceleration for 2.0 s and his maximum speed is 10 m/s. After
+                    reaching this maximum speed, his acceleration becomes zero and then he runs at a constant speed. Assume that
+                    his acceleration is constant during the first 2.0 s of the race, that he starts from rest, and that he runs in
+                    a straight line. (a) How far has the sprinter run when he reaches his maximum speed? (b) What is the magnitude of
+                    his average velocity for a race of the following lengths: (i) 50.0 m, (ii) 100.0 m, (iii) 200.0 m?</p>
+
+            </div>
+
+            <div class="docs-section">
+                <h6 class="docs-header">Solution</h6>
+
+                <p>For the first two seconds of the race, the sprinter maintains his maximum acceleration and reaches 10 m/s after the two seconds. We can use the equation $v=v_0+at$ to find what the acceleration is:</p>
+
+                \begin{split}
+                    10&=0+a(2)\\
+                    a&=5\hbox{ ms}^{-2}
+                \end{split}
+
+                <br>
+                <p>To find out how far he has run in the first two seconds of acceleration, we can use the equation $x=v_0t+\frac{1}{2}at^2$:</p>
+
+                \begin{split}
+                    x&=0(2)+\frac{1}{2}(5)(2)^2\\
+                    &=10\hbox{ m}
+                \end{split}
+
+                <br>
+                <p>Average velocity can be seen has $\frac{\Delta x}{\Delta t}$. So, to find the average velocity for (i) 50.0 m, (ii) 100.0 m, and (iii) 200.0 m, all we have to do is find the time taken. We know that the sprinter covers 10 m in the first 2 seconds, so we can consider the first 10 meters seperately.</p><br>
+
+                <p>The run can be seperated into two sections: (1) the acceleration period, which covers 10 m and takes 2 s; (2) the running period, whose time can be calculated by dividing distance (without the 10 m from section (1)) by velocity (10 m/s). The general formula for total time can be calculated like so:</p>
+
+                \begin{split}
+                    T_{\hbox{total}}&=2+\frac{x-10}{10}\hbox{ s}\\
+                \end{split}
+
+                <p>Plugging in the numbers, the times for (i) 50.0 m, (ii) 100.0 m, and (iii) 200.0 m are 6 s, 11 s, and 21 s respectively. Dividing distance by time to get average velocity, we get 8.33 m/s, 9.09 m/s, and 9.52 m/s.</p>
+
+            </div>
+        </div>
+    </body>
+</html>
